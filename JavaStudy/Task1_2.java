@@ -22,11 +22,11 @@ public class Task1_2 {
          *   3番目の要素に 「ぶどう」 を代入
          */
         String[] strArray = new String[3];
-        String[0] = "りんご";
-        String[1] = "もも";
-        String[2] = "ぶどう";
+        strArray[0] = "りんご";
+        strArray[1] = "もも";
+        strArray[2] = "ぶどう";
         // ④ ③で作成した配列の2番目の要素を出力しなさい。
-        System.out.println( String[2] );
+        System.out.println( strArray[2] );
         /* ⑤下記の処理について、何をしているのかコメントを記入してください。
          *  [10 , 20 , 30 , 40 , 50 を要素の値とする、要素数5のintArrayという名前のint型配列を宣言]
          */
