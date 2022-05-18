@@ -5,14 +5,14 @@ public class Test1 {
 	//メインメソッド
 	public static void main(String[] args) {
 		// TODO 自動生成されたメソッド・スタブ
-		sayHello("太郎");
+		sayHello();
 		
 	}
 	
 	
 	//sayHelloメソッド
-	public static void sayHello(String name) {
-		System.out.println("Hello" + name);
+	public static void sayHello() {
+		System.out.println("Hello");
 		
 	}
 
