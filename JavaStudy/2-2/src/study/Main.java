@@ -16,7 +16,7 @@ public class Main {
 		User user = new User("hege", 123, "abc123");
 
 		// ② ①のインスタンス変数より、アカウント情報をコンソール出力するメソッドを呼び出しなさい。
-		user.printAccountInfo("hege", 123, "abc123");
+		user.printAccountInfo();
 	}
 
 }
