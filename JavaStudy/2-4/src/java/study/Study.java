@@ -5,7 +5,7 @@ import java.constants.FruitsConstants;
 //②Fruits.javaをインポートしなさい。
 import java.fruits.Fruits;
 /**
- * 本課題では、基本的なJavaの構造と、importについて理解を深めていきましょう。
+ * 本課題では、基本的なJavaの構造と、,importについて理解を深めていきましょう。
  *
  * 問①〜問③まであります。
  * 全て回答し、課題にある画像と同じ表示になるようにしてください。
