@@ -7,3 +7,4 @@ public class Fruits {
         System.out.println(count + "個です");
     }
 }
+//f
