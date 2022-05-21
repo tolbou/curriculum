@@ -1,6 +1,6 @@
 package java.constants;
 /**
- * フルーツの定数クラス
+ * フルーツ,の定数クラス
  */
 public class FruitsConstants {
 
