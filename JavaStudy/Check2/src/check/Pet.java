@@ -34,3 +34,4 @@ class RobotPet extends Pet {
         System.out.println("◇ご主人様は" + getMasterName() + "。");
     }
 }
+//f
