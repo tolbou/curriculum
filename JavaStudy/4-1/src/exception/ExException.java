@@ -1,6 +1,6 @@
 package exception;
  
-import java.security.PublicKey;
+
 import java.util.Scanner;
  
 /**
@@ -106,7 +106,7 @@ public class ExException {
      * ルール2: 例外発生時に設定するメッセージは、定義済みの定数から適当なものを指定してください。
      */
     	private static void Null() throws NullPointerException, ArrayIndexOutOfBoundsException, ClassCastException {
-    		System.out.println();
+    		System.out.println(CONST_MSG_NULLPO);
     	}
 
     /**
