@@ -63,7 +63,7 @@ public class ExException {
                     // 問①は最下部にもあります。
                     // ルール: ここへ作成したメソッドを呼び出す
                      
-                    	System.out.println(parameter);
+                    System.out.println(parameter);
                     
                     break;
                     case CONST_EXCEPTION_TRIGER_ARRAY_OUT_OF_BOUNDS:
