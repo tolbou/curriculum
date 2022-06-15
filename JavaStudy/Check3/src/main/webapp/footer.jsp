@@ -7,8 +7,13 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<h1>hoge.inc</h1>
+// div
+<div style= "background-color: gray;"></div>
+// label
+display: inline-block;
+padding: 10px;
+color: white;
 <!-- フッターを作成 -->
-	<%@ include file="jspTest.jsp" %>
+
 </body>
 </html>

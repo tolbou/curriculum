@@ -8,11 +8,12 @@
 </head>
 <body>
 
- 	<%@ include file="jspTest.jsp" %>
 
-<div class="header">
-   <h1>login</h1>
-</div>
+
+<header><div style=" background-color: gray; padding: 10px;
+font-size: 10px; display: inline-block;
+padding: 10px;
+color: white;">login</div></header>
 
 <!-- </body>
 </html> -->
