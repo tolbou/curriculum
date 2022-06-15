@@ -20,6 +20,6 @@
  <servlet-mapping>
  <servlet-name>select</servlet-name>
  <!--問② URLパターンを記述してください。-->
- <url-pattern>/df</url-pattern>
+ <url-pattern>/month</url-pattern>
  </servlet-mapping>
 </web-app>
