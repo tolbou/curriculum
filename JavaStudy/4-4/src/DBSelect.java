@@ -23,14 +23,13 @@ public class DBSelect {
     private static final String POSTGRES_DRIVER = "org.postgresql.Driver";
     /** ・JDMC接続先情報 */
     // 問① データベースのホスト名・データベース名を定数にしなさい。
-    private static final String JDBC_CONNECTION =
+    private static final String JDBC_CONNECTION = "jdbc:postgresql://DESKTOP-EUM7C5T:5432/lesson_db";
     /** ・ユーザー名 */
     // 問② データベースのユーザー名を定数にしなさい。
-    private static final String USER =
+    private static final String USER = "postgres";
     /** ・パスワード */
     // 問③ データベースのパスワードを定数にしなさい。
-    private static final String PASS =
-
+    private static final String PASS = "0814";
     public static void main(String[] args) {
 
         Connection connection = null;
@@ -40,18 +39,18 @@ public class DBSelect {
         try {
             Class.forName(POSTGRES_DRIVER);
             // 問④ 問①〜③の定数を使ってデータベースと接続しなさい。
-            connection = DriverManager.getConnection(
-            "jdbc:postgresql://【ホスト名】/【データベース名】", "【ユーザ名】", "【パスワード】");
+            connection = DriverManager.getConnection(JDBC_CONNECTION, USER, PASS);
+            
             statement = connection.createStatement();
             // 問⑤ SHOHIN_IDが001と020のものを表示させるためのSQL文を記述しましょう。
-            String SQL = "ここにSQLを記述してください。";
+            String SQL = "SELECT * FROM tb_shohin WHERE shohin_id='001' or shohin_id='002'";
             resultSet = statement.executeQuery(SQL);
 
             while (resultSet.next()) {
                 // 問⑥ それぞれカラム名を入力してください。
-                String column1 = resultSet.getString("商品IDのカラム名");
-                String column2 = resultSet.getString("商品名のカラム名");
-                int column3 = resultSet.getInt("単価のカラム名");
+                String column1 = resultSet.getString("shohin_id");
+                String column2 = resultSet.getString("shohin_name");
+                int column3 = resultSet.getInt("tanka");
 
                 System.out.print(column1 + ",");
                 System.out.print(column2 + ",");
