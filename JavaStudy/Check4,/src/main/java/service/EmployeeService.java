@@ -21,19 +21,19 @@ public class EmployeeService {
  /** ドライバーのクラス名 */
  private static final String POSTGRES_DRIVER = "org.postgresql.Driver";
  /** ・JDBC接続先情報 */
- private static final String JDBC_CONNECTION = "ここを改修";
+ private static final String JDBC_CONNECTION = "jdbc:postgresql://localhost/";
  /** ・ユーザー名 */
  private static final String USER = "postgres";
  /** ・パスワード */
- private static final String PASS = "postgres";
+ private static final String PASS = "0814";
  /** ・タイムフォーマット */
  private static final String TIME_FORMAT = "yyyy/MM/dd HH:mm:ss";
  
   // 問② 入力された値で、UPDATEする文
  /** ・SQL UPDATE文 */
- private static final String SQL_UPDATE = "ここを改修";
+ private static final String SQL_UPDATE = "UPDATE employee_table SET id = '?', password = '?', name = '?', comment = '?',login_time = '?'WHERE " ;
  
-  // 問③ 入力されたIDとPassWordをキーにして、検索するSELECT文
+  // 問③ 入力されたIDとPassWordをキーにして、検索するSELECT文login_time
  /** ・SQL SELECT文 */
  private static final String SQL_SELECT = "ここを改修";
  
