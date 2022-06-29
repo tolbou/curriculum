@@ -21,7 +21,7 @@ public class EmployeeService {
  /** ドライバーのクラス名 */
  private static final String POSTGRES_DRIVER = "org.postgresql.Driver";
  /** ・JDBC接続先情報 */
- private static final String JDBC_CONNECTION = "jdbc:postgresql://localhost/";
+ private static final String JDBC_CONNECTION = "jdbc:postgresql://localhost/Employee";
  /** ・ユーザー名 */
  private static final String USER = "postgres";
  /** ・パスワード */
@@ -63,34 +63,38 @@ public class EmployeeService {
  /*
  * 任意のユーザーのログインタイムを更新できるように、プリペアドステートメントを記述。
  */
- 
+ String SQL_UPDATE = "UPDATE employee_table SET login_time = ? where id = ?";
   // preparedStatementに実行したいSQLを格納
  preparedStatement = connection.prepareStatement(SQL_UPDATE);
   // 問④ preparedStatementを使って、一番目のindexに今の時間をセットしてください。2番目のindexにIDをセットしてください。
- 
+ preparedStatement.setString(1, login_time);
+ preparedStatement.setString(2, id);
+ ;
   // 問⑤ UPDATEを実行する文を記述
- 
+ preparedStatement.executeUpdate();
  /*
  * UPDATEが成功したものを即座に表示
  * 任意のユーザーを検索できるように、プリペアドステートメントを記述。
  */
+ String SQL_SELECTL = "select * from employee_table WHERE id = ? and password = ? ";
  preparedStatement = connection.prepareStatement(SQL_SELECT);
   //問⑥ 一番目のindexにIDをセットしてください。2番目のindexにPASSWORDをセット。
- 
+ preparedStatement.setString(1, id);
+ preparedStatement.setString(2, password);
   // SQLを実行。実行した結果をresultSetに格納。
  resultSet = preparedStatement.executeQuery();
  
  while (resultSet.next()) {
   // 問⑦ tmpName,tmpComment,tmpLoginTimeに適当な値を入れてください。
- String tmpName = resultSet.getString("ここを改修");
- String tmpComment = resultSet.getString("こを改修");
- String tmpLoginTime = resultSet.getString("ここを改修");
+ String tmpName = resultSet.getString("name");
+ String tmpComment = resultSet.getString("comment");
+ String tmpLoginTime = resultSet.getString("login_time");
  
   // 問⑧ EmployeeBeanに取得したデータを入れてください。
  employeeDate = new EmployeeBean();
- employeeDate.setName("ここ改修");
- employeeDate.setComment("ここ改修");
- employeeDate.setLogin_Time("ここ改修");
+ employeeDate.setName("tmpName");
+ employeeDate.setComment("tmpName");
+ employeeDate.setLogin_Time("tmpLoginTime");
  }
  
   // forName()で例外発生

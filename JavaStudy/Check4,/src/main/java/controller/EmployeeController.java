@@ -5,7 +5,7 @@ package controller;
  */
  
 import java.io.IOException;
- 
+
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletContext;
 import javax.servlet.ServletException;
@@ -14,6 +14,8 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import service.EmployeeService;
+import bean.EmployeeBean;
+
  
 public class EmployeeController extends HttpServlet {
  public void doPost(HttpServletRequest request, HttpServletResponse response)
@@ -30,11 +32,12 @@ public class EmployeeController extends HttpServlet {
  */
  
   // 問② EmployeeServiceクラスをインスタンス化する。
-  EmployeeService es = new EmployeeService();
+  EmployeeService employeeService = new EmployeeService();
   // 問③ EmployeeBeanに、EmployeeServiceよりsearch関数を呼び出し、返り値を格納する。
-  
+  EmployeeBean employeeBean = new EmployeeBean();
+  employeeBean = employeeService.search(id, password);
   // 問④ nullの部分に適切な引数をセットする。
- request.setAttribute("EmployeeBean", "EmployeeService");
+ request.setAttribute("EmployeeBean", "employeeBean");
  
  } catch (Exception e) {
  e.printStackTrace();
