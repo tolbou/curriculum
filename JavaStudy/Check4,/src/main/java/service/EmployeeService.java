@@ -83,7 +83,7 @@ public class EmployeeService {
  while (resultSet.next()) {
   // 問⑦ tmpName,tmpComment,tmpLoginTimeに適当な値を入れてください。
  String tmpName = resultSet.getString("ここを改修");
- String tmpComment = resultSet.getString("ここを改修");
+ String tmpComment = resultSet.getString("こを改修");
  String tmpLoginTime = resultSet.getString("ここを改修");
  
   // 問⑧ EmployeeBeanに取得したデータを入れてください。

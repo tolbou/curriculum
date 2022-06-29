@@ -1,6 +1,6 @@
 package bean;
 /**
- * ・社員情報データ（モデル）
+ * ・社員情報データ（モデルv）
  */
 public class EmployeeBean {
     private String Id;

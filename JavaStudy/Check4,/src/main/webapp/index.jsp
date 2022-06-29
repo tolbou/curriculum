@@ -3,7 +3,7 @@
 <%@ page import="bean.EmployeeBean"%>
  
 <%
- // 問① getAttributeに適切な引数をセットして、EmployeeControllerから渡されたBeanを取得する。
+ // 問① getAttributeに適切な引数をセットsして、EmployeeControllerから渡されたBeanを取得する。
  EmployeeBean employeeBean = (EmployeeBean) request.getAttribute("ここを改修");
 %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
@@ -35,7 +35,7 @@
  
  <!-- 問② それ以外の表示（エラーの場合）-->
  <% } else { %>
- 【ここを修正】
+ IDもしくはパスワードが間違っています
  <% } %>
  </div>
 </body>
