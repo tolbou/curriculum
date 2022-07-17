@@ -11,7 +11,7 @@ public class test {
 		int number[] = { 3, 5, 7, 9, 11, 13, 15 };
 		// Q1-1
 		// number配列0番目と3番目の合計値を出力しなさい
-        System.out.println("合計は" + number[0] + number[3] + "点です");
+        System.out.println("合計は" + (number[0] + number[3]) + "点です");
 		// Q1-2
 		// number配列1番目と2番目との乗算を出力しなさい
         System.out.println("乗算は" + number[1] * number[2] + "点です");
