@@ -1,0 +1,7 @@
+127.0.0.1 - - [21/Aug/2022:00:40:17 +0900] "GET / HTTP/1.1" 404 901
+0:0:0:0:0:0:0:1 - - [21/Aug/2022:00:40:18 +0900] "GET /SchooWork16/input.html HTTP/1.1" 200 283
+0:0:0:0:0:0:0:1 - - [21/Aug/2022:00:40:22 +0900] "GET /SchooWork16/InputServlet? HTTP/1.1" 200 163
+0:0:0:0:0:0:0:1 - - [21/Aug/2022:00:40:22 +0900] "GET /SchooWork16/InputServlet? HTTP/1.1" 200 163
+0:0:0:0:0:0:0:1 - - [21/Aug/2022:00:40:22 +0900] "GET /SchooWork16/InputServlet? HTTP/1.1" 200 163
+0:0:0:0:0:0:0:1 - - [21/Aug/2022:00:40:22 +0900] "GET /SchooWork16/InputServlet? HTTP/1.1" 200 163
+0:0:0:0:0:0:0:1 - - [21/Aug/2022:00:41:01 +0900] "GET /SchooWork16/output.jsp HTTP/1.1" 500 2541

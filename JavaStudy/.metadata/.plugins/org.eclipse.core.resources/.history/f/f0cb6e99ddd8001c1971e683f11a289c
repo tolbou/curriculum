@@ -1,0 +1,28 @@
+package instance;
+
+import java.util.Objects;
+
+public class Instance0fSato {
+	private String firstName;
+	
+	public Instance0fSato(String firstName) {
+		this.firstName = firstName;
+	}
+
+	@Override
+	public int hashCode() {
+		return Objects.hash(firstName);
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj) {
+			return true;
+		}
+		if (!(obj instanceof Instance0fSato)) {
+			return false;
+		}
+		Instance0fSato other = (Instance0fSato) obj;
+		return Objects.equals(firstName, other.firstName);
+	}
+}

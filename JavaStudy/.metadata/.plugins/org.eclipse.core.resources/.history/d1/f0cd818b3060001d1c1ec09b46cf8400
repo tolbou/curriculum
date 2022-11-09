@@ -1,0 +1,10 @@
+package matango;
+
+public class Matango {
+	
+//	属性の定義
+	int hp;
+	
+	int level = 10;
+
+}

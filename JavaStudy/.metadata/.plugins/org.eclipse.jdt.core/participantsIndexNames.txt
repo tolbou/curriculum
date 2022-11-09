@@ -1,0 +1,23 @@
+INDEX VERSION 1.131
+C:\LetsEngineer\curriculum\JavaStudy\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1627377154.index
+\SchooCampus1
+C:\LetsEngineer\curriculum\JavaStudy\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2650246163.index
+\SchooSample16\src\main\java
+C:\LetsEngineer\curriculum\JavaStudy\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\308764070.index
+\Check3\src\main\java
+C:\LetsEngineer\curriculum\JavaStudy\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\4211555691.index
+\4-2\src\main\java
+C:\LetsEngineer\curriculum\JavaStudy\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\30975185.index
+\Check3\src\main\java
+C:\LetsEngineer\curriculum\JavaStudy\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3302720341.index
+\JspTest\src\main\java
+C:\LetsEngineer\curriculum\JavaStudy\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\802899096.index
+\SchooWork16\src
+C:\LetsEngineer\curriculum\JavaStudy\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\657131671.index
+\SchooCampus1
+C:\LetsEngineer\curriculum\JavaStudy\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\854925805.index
+\Check4\src\main\java
+C:\LetsEngineer\curriculum\JavaStudy\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3367894103.index
+\Check4,\src\main\java
+C:\LetsEngineer\curriculum\JavaStudy\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1319190232.index
+\SchooSample16\src
